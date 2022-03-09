@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
 }
 
-.playerName {font-size: 36px;
+.playerName {font-size: 46px;
     text-align: left;
     height: 50px;
     width: 750px;
@@ -22,6 +22,7 @@
     border-radius: 80px;
     padding: 30px;
     font-weight: 800;
+    
 }
 
 div.div1 {
@@ -83,7 +84,7 @@ div.div1 {
     justify-content: center;
     background-image: linear-gradient(rgb(0, 255, 208), rgb(106, 106, 9));
     color: black;
-    font-size: 24px; 
+    font-size: 36px; 
     border-radius: 60px;
 }
 
@@ -188,7 +189,7 @@ div.div1 {
 #labels {
     color: red;
     position: absolute;
-    top: 1470px;
+    top: 1490px;
     font-size: 40px;
     font-style: bold;
 }
