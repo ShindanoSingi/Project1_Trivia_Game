@@ -14,12 +14,13 @@
     <div class="containerBox">
         <h1>TRIVIA GAME</h1>
         <div class="div1">
-            ddddbbbbbbbbbbdfg fdgffsssssssssssssssssssssssssssssss sssssssssswwwwwwwwssssssssssssssffffdvvvvgd
+            Loading the question...
         </div>
-<p class="playerName"></p>
+        <div class="labelCategory">Category</div>
+        <p class="category"></p>
         <div class="underQuestion">
             <div class="playerAndInnerBox">
-                
+
 
                 <div class="qDifficultyBox">
                     <p id="question" class="qCat">QUESTION DIFFICULTY</p>
@@ -34,29 +35,40 @@
             <div class="imgAndQuestions">
                 <img class="image" src="download (1).jpeg" alt="Mountains">
                 <div class="answersButtons">
-                    <button class="response" id="response1">ssvvvvvvvvvvsssssssssssssbbbbbbbb</button>
-                    <button class="response" id="response2">sssssssssssssssssssbbbbbbbbbbbbbb</button>
-                    <button class="response" id="response3">sssssssssssssssssssssbbbbbbbbbbbb</button>
-                    <button class="response" id="response4">sssssssssssssssssssssbbbbbbbbbbbb</button>
+                    <button class="response" id="response1">Loading the answer...</button>
+                    <button class="response" id="response2">Loading the answer...</button>
+                    <button class="response" id="response3">Loading the answer...</button>
+                    <button class="response" id="response4">Loading the answer...</button>
                 </div>
             </div>
         </div>
 
-        <div class="labels">
-            <label id="labels" class="labelT">Timer</label>
-            <label id="labels" class="labelQ">Question Number</label>
-            <label id="labels" class="labelC">Correct Answers</label>
-            <label id="labels" class="labelW">Wrong Answers</label>
+        <div class="labelsAndButtons">
+            <div class="labels">
+                <div id="labels" class="labelT">Timer</div>
+                <div id="labels" class="labelQ">Queston #</div>
+                <div id="labels" class="labelC">Correct Ans.</div>
+                <div id="labels" class="labelW">Wrong Ans.</div>
+            </div>
+
+            
+                <div class="timerQuestionCorrectWrong">
+                    <div id="bottombuttons" class="timer">0</div>
+                    <div id="bottombuttons" class="questionNumber">0</div>
+                    <div id="bottombuttons" class="correct">0</div>
+                    <div id="bottombuttons" class="wrong">0</div>
+                </div>
+                <div class="threeBottomButtons">
+                    <button class="reset">Reset</button>
+                    <button class="startGame">Start The Game</button>
+                    <button class="generalAssembly">Thank You GA</button>
+                </div>
+            
         </div>
 
-        <div class="timerQuestionCorrectWrong">
-            <div id="footer" class="timer">Timer</div>
-            <div id="footer" class="questionNumber">Number</div>
-            <div id="footer" class="correct">Correct</div>
-            <div id="footer" class="wrong">Wrong</div>
-        </div>
 
     </div>
+
 
     <script src="script.js"></script>
 </body>
