@@ -25,9 +25,9 @@
                 <div class="qDifficultyBox">
                     <p id="question" class="qCat">QUESTION DIFFICULTY</p>
                     <div class="difficulties">
-                        <button id="difficulty" class="easy">Easy</button>
-                        <button id="difficulty" class="medium">Medium</button>
-                        <button id="difficulty" class="hard">Hard</button>
+                        <button class="difficulty" id="easy">Easy</button>
+                        <button class="difficulty" id="medium">Medium</button>
+                        <button class="difficulty" id="hard">Hard</button>
                     </div>
                 </div>
             </div>
@@ -44,19 +44,17 @@
         </div>
 
         <div class="labelsAndButtons">
-            <div class="labels">
-                <div id="labels" class="labelT">Timer</div>
-                <div id="labels" class="labelQ">Queston #</div>
-                <div id="labels" class="labelC">Correct Ans.</div>
-                <div id="labels" class="labelW">Wrong Ans.</div>
+            <div class="labelContainer">
+                <div class="labels" id="labelQ">Queston Num.</div>
+                <div class="labels" id="labelC">Correct Ans.</div>
+                <div class="labels" id="labelW">Wrong Ans.</div>
             </div>
 
             
                 <div class="timerQuestionCorrectWrong">
-                    <div id="bottombuttons" class="timer">0</div>
-                    <div id="bottombuttons" class="questionNumber">0</div>
-                    <div id="bottombuttons" class="correct">0</div>
-                    <div id="bottombuttons" class="wrong">0</div>
+                    <div class="bottombuttons" id="questionNumber">0</div>
+                    <div class="bottombuttons" id="correct">0</div>
+                    <div class="bottombuttons" id="wrong">0</div>
                 </div>
                 <div class="threeBottomButtons">
                     <button class="reset">Reset</button>
