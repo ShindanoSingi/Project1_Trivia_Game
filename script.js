@@ -67,8 +67,8 @@ let startButton = () => {
 // Selecting difficulty
 difficultyButtons.addEventListener('click', e => {
 
-    difficulty = e.target.className;
-    console.log(e.target)
+    difficulty = e.target.id;
+    //console.log(e.target.id)
 
     // Only change the color "easy" button is selected, then enable "Start The Game"
     if (difficulty === 'easy') {
