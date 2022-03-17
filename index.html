@@ -10,14 +10,13 @@
 </head>
 
 <body>
-
     <div class="containerBox">
         <h1>TRIVIA GAME</h1>
         <div class="div1">
             Loading the question...
         </div>
         <div class="labelCategory">Category</div>
-        <p class="category"></p>
+        <p class="category">Loading category...</p>
         <div class="underQuestion">
             <div class="playerAndInnerBox">
 
@@ -33,7 +32,12 @@
             </div>
 
             <div class="imgAndQuestions">
-                <img class="image" src="download (1).jpeg" alt="Mountains">
+
+                <!-- https://stackoverflow.com/questions/37019446/how-to-change-height-of-the-video-in-html-css -->
+                <video autoplay muted loop id='myVideo'>
+                    <source src="" type="video/MP4">
+                </video>
+
                 <div class="answersButtons">
                     <button class="response" id="response1">Loading the answer...</button>
                     <button class="response" id="response2">Loading the answer...</button>
@@ -45,28 +49,37 @@
 
         <div class="labelsAndButtons">
             <div class="labelContainer">
-                <div class="labels" id="labelQ">Queston Num.</div>
-                <div class="labels" id="labelC">Correct Ans.</div>
-                <div class="labels" id="labelW">Wrong Ans.</div>
+                <div class="labels" id="labelQ">Total Questons</div>
+                <div class="labels" id="labelC">Correct Answers</div>
+                <div class="labels" id="labelW">Wrong Answers</div>
             </div>
 
-            
-                <div class="timerQuestionCorrectWrong">
-                    <div class="bottombuttons" id="questionNumber">0</div>
-                    <div class="bottombuttons" id="correct">0</div>
-                    <div class="bottombuttons" id="wrong">0</div>
-                </div>
-                <div class="threeBottomButtons">
-                    <button class="reset">Reset</button>
-                    <button class="startGame">Start The Game</button>
-                    <button class="generalAssembly">Thank You GA</button>
-                </div>
-            
+            <div class="timerQuestionCorrectWrong">
+                <div class="bottombuttons" id="questionNumber">0</div>
+                <div class="bottombuttons" id="correct">0</div>
+                <div class="bottombuttons" id="wrong">0</div>
+            </div>
+            <div class="threeBottomButtons">
+                <button class="reset">Reset</button>
+                <button class="startGame">Start The Game</button>
+                <button class="generalAssembly">Audio ON/OFF</button>
+            </div>
+
         </div>
 
-
+    </div>
+    <div class="win">
+        <img class="winImage" src="Trivia Game_files/winnerImage.jpeg" alt="trophy">
+        <p id="winPar1">Congratulations!</p>
+        <p id="winPar2">You Win!</p>
+        <button class="winReset">Reset</button>
     </div>
 
+    <div class="lose">
+        <p id="winPar1">Congratulations!</p>
+        <p id="losePar">Sorry, Try Again!</p>
+        <button class="loseReset">Reset</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
