@@ -1,21 +1,28 @@
 // Declaring variables
 
+// Capture win window
 let winWindow = document.querySelector('.win');
 
+// Declae win reset button
 let winResetButton = document.querySelector('.winReset');
 
+// define lose reset button
 let loseResetButton = document.querySelector('.loseReset');
 
+// define lose window
 let loseWindow = document.querySelector('.lose');
 
+// define win image
 let winImage = document.querySelector('.winImage')
 
+// define a message if the payer loses the game
 let loseMessage = document.querySelector('#losePar');
 
-let video = document.querySelector('#myVideo')
+// define 
+let video = document.querySelector('#myVideo');
 
 // Get Body content
-let body = document.querySelector('body')
+let body = document.querySelector('body');
 
 // This will hold category information
 let category = document.querySelector('.category');
@@ -26,8 +33,14 @@ let question = document.querySelector('.div1');
 // This is for all response buttons
 let answerButtons = document.querySelector('.answersButtons');
 
-// Declaring difficulty buttons
+// Define difficulty buttons
 let difficultyButtons = document.querySelector('.difficulties');
+
+// Define image
+let image = document.querySelector('img');
+
+// Define audio button
+let audioButton = document.querySelector('.audio');
 
 // Declaring individual difficulty buttons
 let easyButton = document.querySelector('#easy');
@@ -40,8 +53,8 @@ let response2 = document.querySelector('#response2');
 let response3 = document.querySelector('#response3');
 let response4 = document.querySelector('#response4');
 
-// This will hold the question's number
-let qNumber = document.querySelector('#questionNumber');
+// Define the total number of questions' box.
+let totNumQuestionsBox = document.querySelector('#questionNumber');
 
 // This will hold number of correct answers
 let cAnswer = document.querySelector('#correct');
@@ -49,91 +62,109 @@ let cAnswer = document.querySelector('#correct');
 // This will hold number of wrong answers
 let wAnswer = document.querySelector('#wrong');
 
-let questionscore = 0;
-let correctAnswerscore = 0;
-let wrongAnswerscore = 0;
-let score = 0;
+// Define the "show answer" button
+let showAnswerButton = document.querySelector('#showAnswer');
+
+let corrAnswer;
+
+// Create new audio objects
+// Code source: https://www.w3schools.com/jsref/met_audio_play.asp
+let audio = new Audio('general-logo-13395.mp3');
+
+let questionscoreCount = 0;
+let correctAnswerScoreCount = 0;
+let wrongAnswerscoreCount = 0;
+let scoreCount = 0;
 let clear = '';
 let difficulty = '';
 
-// Set winning score
-let winningScore = 6;
+// Set winning scoreCount
+let winningscoreCount = 6;
+
+let highscoreCount = 0;
 
 let startGame = document.querySelector('.startGame');
 
 // Takes the response from fetch
 let triviaQuestion;
 
-// Array of all videos/mp4
-let arrayVideos = []
-arrayVideos.push('videoArray/Pexels Videos 1307329.mp4');
-arrayVideos.push('videoArray/Pexels Videos 1893746.mp4');
-arrayVideos.push('videoArray/Pexels Videos 2157006.mp4');
-arrayVideos.push('videoArray/pexels-adrien-jacta-6630025.mp4');
-arrayVideos.push('videoArray/pexels-ambientnature-atmosphere-5590457.mp4');
-arrayVideos.push('videoArray/pexels-ambientnature-atmosphere-5948574.mp4');
-arrayVideos.push('videoArray/pexels-ambientnature-atmosphere-5955965.mp4');
-arrayVideos.push('videoArray/pexels-ambientnature-atmosphere-5956783.mp4');
-arrayVideos.push('videoArray/pexels-anna-tarazevich-6550969.mp4');
-arrayVideos.push('videoArray/pexels-greg-grzegorz-sobieraj-6825302.mp4');
-arrayVideos.push('videoArray/pexels-ibrahim-bennett-5735794.mp4');
-arrayVideos.push('videoArray/pexels-mart-production-7565824.mp4');
-arrayVideos.push('videoArray/pexels-matthias-groeneveld-5619568.mp4');
-arrayVideos.push('videoArray/pexels-mikhail-nilov-6981302.mp4');
-arrayVideos.push('videoArray/pexels-mikhail-nilov-6981411.mp4');
-arrayVideos.push('videoArray/pexels-nicolaas-van-der-walt-5580688.mp4');
-arrayVideos.push('videoArray/pexels-pat-whelen-5738601.mp4');
-arrayVideos.push('videoArray/pexels-rostislav-uzunov-7385122 (1).mp4');
-arrayVideos.push('videoArray/pexels-rostislav-uzunov-8252781.mp4');
-arrayVideos.push('videoArray/pexels-xabi-oregi-5619876.mp4');
-arrayVideos.push('videoArray/pexels-yakupmert-aksoy-5651047.mp4');
-arrayVideos.push('videoArray/production ID_4046226.mp4');
-arrayVideos.push('videoArray/production ID_4231734.mp4');
-arrayVideos.push('videoArray/production ID_4328789.mp4');
-arrayVideos.push('videoArray/production ID_4478322.mp4');
-arrayVideos.push('videoArray/production ID_4824392.mp4');
-arrayVideos.push('videoArray/production ID_4980005.mp4');
-arrayVideos.push('videoArray/production ID_5155396.mp4');
-arrayVideos.push('videoArray/production ID_5192849.mp4');
-arrayVideos.push('videoArray/production ID_5197931.mp4');
-arrayVideos.push('videoArray/production ID_5198042.mp4');
-arrayVideos.push('videoArray/video.mp4');
+// Define a global url which will be accessible by multiple functions
+let url;
+
+// Array of all Images/mp4
+// https://www.pexels.com/search/environment/
+let arrayImages = [];
+arrayImages.push('pexels-ákos-szabó-440731.jpg');
+arrayImages.push('pexels-atikul-haque-rafat-679598.jpg');
+arrayImages.push('pexels-felix-mittermeier-957024.jpg');
+arrayImages.push('pexels-ian-turnell-709552.jpg');
+arrayImages.push('pexels-karolina-grabowska-5750182.jpg');
+arrayImages.push('pexels-mahima-1250260.jpg');
+arrayImages.push('pexels-mali-maeder-142497.jpg');
+arrayImages.push('pexels-matthias-cooper-580900.jpg');
+arrayImages.push('pexels-min-an-1131458.jpg');
+arrayImages.push('pexels-minamarie-michell-570041.jpg');
+arrayImages.push('pexels-olya-kobruseva-5236397.jpg');
+arrayImages.push('pexels-pixabay-33044.jpg');
+arrayImages.push('pexels-pixabay-221012.jpg');
+arrayImages.push('pexels-pixabay-235615.jpg');
+arrayImages.push('pexels-pixabay-259280.jpg');
+arrayImages.push('pexels-pixabay-302804.jpg');
+arrayImages.push('pexels-pixabay-414090.jpg');
+arrayImages.push('pexels-pixabay-459225.jpg');
+arrayImages.push('pexels-pixabay-459225.jpg');
+arrayImages.push('pexels-pixabay-460621.jpg');
+arrayImages.push('pexels-scott-webb-1048033.jpg');
+arrayImages.push('pexels-skitterphoto-9198.jpg');
+arrayImages.push('pexels-sohail-na-807598.jpg');
 
 // for correct and wrong answer song; source code: 
 // https://www.dreamstime.com/stock-music-sound-effect/wrong-answer-answer.html
-let audio = new Audio('general-logo-13395.mp3');
-audio.allow = "autoplay";
-
 
 // Reset the game when the "Reset" button is clicked
 let resetButton = document.querySelector('.reset');
 resetButton.addEventListener('click', () => {
-    audio.play()
-    window.location.reload()
+
+    // Code source: https://www.w3schools.com/jsref/met_audio_play.asp
+    audio.volume = 0.2;
+
+    // Refresh the page/window
+    window.location.reload();
 });
 
 // Assign color to all answer buttons and call "play" function
 let startButton = () => {
-    score++;
+
+    // Increament the score count.
+    scoreCount++;
+
+    // Select all responses buttons.
     let responses = document.querySelectorAll('.response');
     responses.forEach(response => {
         response.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214));'
     })
 
-    // When the "Start The Game" button is pressed, Call "play" function
+    // When the "Start The Game" button is presNexted, Call "play" function
     play();
 }
 
 // Select difficulty buttons
 difficultyButtons.addEventListener('click', e => {
 
+    // Target the element/button by its id.
     difficulty = e.target.id;
 
     // Only change the color "easy" button is selected, then enable "Start The Game"
     if (difficulty === 'easy') {
+
+        // Only change the background of "easy button" to a different color, and let other bottons' 
+        // colors unchanged.
         e.target.style.backgroundImage = 'linear-gradient(rgb(9, 25, 202), rgb(81, 14, 214))';
         mediumButton.style.backgroundImage = `linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7))`;
         hardButton.style.backgroundImage = `linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7))`;
+
+        // If the "easy" difficlty button is selected, alert the play with the message below for 
+        // confirmation prior to starting the game.
         alert(`You have selected "${difficulty}" difficulty. Next, click on "Start The Game" button to play the game. 
         Good luck!`)
 
@@ -144,10 +175,17 @@ difficultyButtons.addEventListener('click', e => {
         });
     }
 
+    // Only change the color "medium" button is selected, then enable "Start The Game"
     else if (difficulty === 'medium') {
+
+        // Only change the background of "medium button" to a different color, and let other bottons' 
+        // colors unchanged.
         e.target.style.backgroundImage = 'linear-gradient(rgb(9, 25, 202), rgb(81, 14, 214))';
         easyButton.style.backgroundImage = `linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7))`;
         hardButton.style.backgroundImage = `linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7))`;
+
+        // If the "medium" difficlty button is selected, alert the play with the message below for 
+        // confirmation prior to starting the game.
         alert(`You have selected "${difficulty}" difficulty. Next, click on "Start The Game" button to play the game. 
         Good luck!`);
 
@@ -156,10 +194,17 @@ difficultyButtons.addEventListener('click', e => {
             startButton();
         });
     }
+
+    // Only change the color "hard" button is selected, then enable "Start The Game"
     else if (difficulty === 'hard') {
+
+        // Only change the background of "hard button" to a different color, and let other bottons' 
+        // colors unchanged.
         e.target.style.backgroundImage = 'linear-gradient(rgb(9, 25, 202), rgb(81, 14, 214))';
         mediumButton.style.backgroundImage = `linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7))`;
         easyButton.style.backgroundImage = `linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7))`;
+
+        // If the "hard" difficlty button is selected, alert the play with the message below for confirmation prior to starting the game.
         alert(`You have selected "${difficulty}" difficulty. Next, click on "Start The Game" button to play the game. 
         Good luck!`)
 
@@ -168,27 +213,32 @@ difficultyButtons.addEventListener('click', e => {
             startButton();
         });
     }
+
+    // Return the value of the chosen difficulty button.
     return difficulty;
 })
 
 
 
 // Play the game when the start game button is click.
-
 function play() {
 
-    audio.play();
+    // Set the volume to 0.2 and Play audio
+    // Source:  https://www.w3schools.com/jsref/prop_audio_volume.asp
+    audio.volume = 0.05;
 
+    // Define and get a random number
     // Source: https://www.w3schools.com/jsref/jsref_random.asp
     let randomQuestion = Math.floor(Math.random() * 10 + 9);
 
     // Get the question from the API
-    //url = `https://opentdb.com/api.php?amount=1&category=${randomQuestion}&type=multiple`
+    // Source: https://opentdb.com/api_config.php
+    url = `https://opentdb.com/api.php?amount=50&difficulty=${difficulty}&type=multiple`
 
-    let url = `https://opentdb.com/api.php?amount=1&difficulty=${difficulty}`
-
+    // Define an empty array that will hold the correct answer and 3 wrong answers
     let arr = [];
 
+    // fetch the the result for the above url.
     fetch(url)
         .then(res => {
             return res.json()
@@ -197,6 +247,9 @@ function play() {
         .then(res => {
 
             triviaQuestion = res;
+
+            // Capture the correct from the response
+            corrAnswer = res.results[0].correct_answer;
 
             arr.push(res.results[0].correct_answer);
             arr.push(res.results[0].incorrect_answers[0])
@@ -213,8 +266,6 @@ function play() {
             response4.innerHTML = arr[3];
 
             // Shuffling the array to avoid answers pattern.
-            // source: https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
-
             for (let i = arr.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1))
 
@@ -222,79 +273,87 @@ function play() {
                 arr[i] = arr[j];
                 arr[j] = tempNum;
             }
-
-            // console.log(res.results[0])
         })
 }
 
 
+// Track the clicking event of each answerButton
 answerButtons.addEventListener('click', (event) => {
 
-    //console.log(score)
+    // Assign the scoreCount the tota
+    totNumQuestionsBox.innerText = scoreCount;
 
-    qNumber.innerText = score;
+    // After each click, check if the total number of question is 10.
+    if (scoreCount === 10) {
 
-    if (score === 10) {
+        // Delay the win or lose window for 1 seconds.
+        setTimeout(() => {
+            if (winningscoreCount < correctAnswerScoreCount) {
 
-        setTimeout(() =>{
-            if (winningScore < correctAnswerscore) {
+                // Set the message for the winning window to display the highest score.
+                document.querySelector('#winPar2').innerText =
+                    `Your Highest Score was ${Math.floor((correctAnswerScoreCount * 100)
+                        / (scoreCount - 1))}%.`;
 
                 // Change z-index to 1 to appear on top
                 winWindow.style.zIndex = "1";
-    
+
                 // Refresh the page when the "Reset" button is clicked
                 winResetButton.addEventListener('click', () => {
                     refreshWindow();
                 });
             }
-    
-            else if (correctAnswerscore < winningScore) {
-    
+
+            else if (correctAnswerScoreCount < winningscoreCount) {
+
+                // Set the message in the losing window to display the highest score
+                document.querySelector('#losePar').innerText =
+                    `Sorry, Your Highest Score was ${Math.floor((correctAnswerScoreCount * 100)
+                        / (scoreCount - 1))}%. Try Again.`;
+
                 // Change z-index to 1 to appear on top
                 loseWindow.style.zIndex = "1";
-    
+
                 // Refresh the page when the "Reset" button is clicked
                 loseResetButton.addEventListener('click', () => {
                     refreshWindow();
                 });
             }
+
         }, 1000)
 
     }
 
-
     // Check if the selected answer is equal to correct answer
     if (event.target.innerText === triviaQuestion.results[0].correct_answer) {
 
+        // Play "audioCorrectAnswer" if the answer is correct with reduced volume
+        let audioCorrectAnswer = new Audio('Correct_answer.mp3');
+        audioCorrectAnswer.play();
+
         // Increment total number of question
-        score++;
+        scoreCount++;
 
         // Increament the the number of correct answers.
-        correctAnswerscore++;
+        correctAnswerScoreCount++;
 
         // Write the correct answer in the correct answer box
-        cAnswer.innerText = correctAnswerscore;
+        cAnswer.innerText = correctAnswerScoreCount;
 
-        for (let i = arrayVideos.length - 1; i > 0; i--) {
+        for (let i = arrayImages.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1))
 
-            let tempNum = arrayVideos[i];
-            arrayVideos[i] = arrayVideos[j];
-            arrayVideos[j] = tempNum;
+            let tempNum = arrayImages[i];
+            arrayImages[i] = arrayImages[j];
+            arrayImages[j] = tempNum;
         }
 
         // Play a random video
-        video.src = arrayVideos[4];
-
-        // Play "audioCorrectAnswer" if the answer is correct
-        let audioCorrectAnswer = new Audio('Correct_answer.mp3');
-        audioCorrectAnswer.play();
+        image.src = arrayImages[1];
 
         // Set the background of the correct answer to green
         event.target.style.backgroundImage = `linear-gradient(rgb(0, 255, 106), 
         rgb(9, 106, 28))`;
-
-
 
         // Call the next question
         nextQuestion()
@@ -303,108 +362,129 @@ answerButtons.addEventListener('click', (event) => {
     // Check if the selected answer is not equal to the correct answer
     else if (event.target.innerText !== triviaQuestion.results[0].correct_answer) {
 
-        for (let i = arrayVideos.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1))
-
-            let tempNum = arrayVideos[i];
-            arrayVideos[i] = arrayVideos[j];
-            arrayVideos[j] = tempNum;
-        }
-
-        // Play a random video
-        video.src = arrayVideos[5];
-
-        console.log(arrayVideos[5])
-
-        score++;
-
         // Play this audio if the answer is incorrect
         let audioWrongAnswer = new Audio('wrongAnswer.mp3');
         audioWrongAnswer.play();
 
+        for (let i = arrayImages.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1))
+
+            let tempNum = arrayImages[i];
+            arrayImages[i] = arrayImages[j];
+            arrayImages[j] = tempNum;
+        }
+
+        // Play a random video
+        image.src = arrayImages[0];
+
+        // Incremment scoreCount
+        scoreCount++;
+
         // Increament the the number of incorrect answers.
-        wrongAnswerscore++;
+        wrongAnswerscoreCount++;
 
         // Set the background of the correct answer to red
         event.target.style.backgroundImage = 'linear-gradient(rgb(220, 7, 7), #fa0a0a)';
 
         // Write the incorrect answer in the wrong answer box
-        wAnswer.innerHTML = wrongAnswerscore;
+        wAnswer.innerHTML = wrongAnswerscoreCount;
     }
 
     // Call the next question
     nextQuestion();
 })
 
-
-
 // Refresh the window reset all numbers to 0 and all texts to empty.
 function refreshWindow() {
     window.location.reload()
 }
 
-
-
 // This function runs when the player calls for the next question.
 function nextQuestion() {
 
     // Play the general audio
-    audio.play()
+    audio.play();
 
     // Source: https://www.w3schools.com/jsref/jsref_random.asp
     let randomQuestions = Math.floor(Math.random() * 10 + 9);
 
-    let urls = `https://opentdb.com/api.php?amount=1&category=${randomQuestions}&type
-    =multiple`
+    let urlNext = `https://opentdb.com/api.php?amount=1&category=${randomQuestions}&type=multiple`
 
-    let arrs = [];
+    let arrNext = [];
 
-    fetch(urls)
-        .then(ress => {
-            return ress.json()
+    fetch(urlNext)
+        .then(resNext => {
+            return resNext.json()
         })
 
-        .then(ress => {
+        .then(resNext => {
+
+            // Capture the correct from the response
+            corrAnswer = resNext.results[0].correct_answer;
 
             // Assign the response from fetch to triviaQuestion
-            triviaQuestion = ress;
+            triviaQuestion = resNext;
 
-            arrs.push(ress.results[0].correct_answer);
-            arrs.push(ress.results[0].incorrect_answers[0])
-            arrs.push(ress.results[0].incorrect_answers[2])
-            arrs.push(ress.results[0].incorrect_answers[1])
+            arrNext.push(resNext.results[0].correct_answer);
+            arrNext.push(resNext.results[0].incorrect_answers[0])
+            arrNext.push(resNext.results[0].incorrect_answers[2])
+            arrNext.push(resNext.results[0].incorrect_answers[1])
 
             // Shuffling the array to avoid answers pattern.
             // source: https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
 
-            for (let i = arrs.length - 1; i > 0; i--) {
+            for (let i = arrNext.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1))
 
-                let tempNums = arrs[i];
-                arrs[i] = arrs[j];
-                arrs[j] = tempNums;
+                let tempNums = arrNext[i];
+                arrNext[i] = arrNext[j];
+                arrNext[j] = tempNums;
             }
 
             // Assigning original coloanswers to answers buttons
-            response1.innerHTML = arrs[0];
+            response1.innerHTML = arrNext[0];
             response1.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
 
-            response2.innerHTML = arrs[1];
+            response2.innerHTML = arrNext[1];
             response2.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
 
-            response3.innerHTML = arrs[2];
+            response3.innerHTML = arrNext[2];
             response3.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
 
-            response4.innerHTML = arrs[3];
+            response4.innerHTML = arrNext[3];
             response4.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
 
-            category.innerHTML = ress.results[0].category
-            question.innerHTML = ress.results[0].question
+            category.innerHTML = resNext.results[0].category
+            question.innerHTML = resNext.results[0].question
 
-            console.log(ress.results[0])
+            console.log(resNext.results[0])
 
         })
 }
+
+// Display the answer if the "show Andwer" button is clicked for 1 second, then hide the answer.
+showAnswerButton.addEventListener('click', () => {
+    let answerBox = document.querySelector('.showAnswer');
+    
+    setTimeout(function () {
+        answerBox.style.visibility = 'visible';
+        answerBox.innerHTML = corrAnswer;
+        answerBox.style.zIndex = '-1';
+        
+        //Hide the answer
+        setTimeout(function () {
+            answerBox.style.visibility = 'hidden';
+
+        }, 1000)
+    }, 1000)
+
+    if (answerBox.innerHTML === 'undefined') {
+        answerBox.innerHTML = "Loading the answer...";
+    }
+    else {
+        answerBox.innerHTML = "Loading the answer...";
+    }
+})
 
 
 
