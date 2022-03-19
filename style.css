@@ -1,11 +1,23 @@
+/* body */
+body {
+    display: flex;
+   justify-content: center;
+    font-size: 0.98vmin;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 27.12vmin;
+    padding: 6.78vmin 0.54vmin 0.54vmin 54.24vmin;
+}
+
 /* The window with all elements */
 .containerBox {
-    font-size: 56px;
-    border-radius: 100px;
-    border: 20px solid rgb(14, 1, 2);
+    font-size: 1.52vmin;
+    border-radius: 2.71vmin;
+    border: 0.54vmin solid rgb(14, 1, 2);
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 1610px;
-    height: 2950px;
+    width: 43.66vmin;
+    height: 80vmin;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
@@ -15,70 +27,111 @@
     z-index: 1;
 }
 
-/* The show button */
-.showAnswer {
-    text-align: center;
-    width: 1530px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+/* Label for category */
+.labelCategory {
+    font-size: 1.63vmin;
+    color: white;
     position: relative;
-    top: 520px;
-    left: 30px;
-    color: honeydew;
-    visibility: hidden;
-    border: 5px solid green;
-    border-radius: 50px;
+    top: -3.08vmin;
+    right: 10.03vmin;
 }
 
 /* The catgory Box */
 .category {
-    font-size: 56px;
+    font-size: 1.52vmin;
     text-align: center;
-    height: 200px;
-    width: 780px;
+    height: 5.42vmin;
+    width: 21.15vmin;
     position: relative;
-    top: -75px;
-    left: 30px;
+    top: -4.3vmin;
+    left: 0.81vmin;
     background-color: rgb(205, 220, 209);
-    border-radius: 80px;
-    padding: 25px 15px 15px 15px;
+    border-radius: 2.17vmin;
+    padding: 0.68vmin 0.41vmin 0.41vmin 0.41vmin;
     font-weight: 800;
+}
+
+
+/* The show answer message box */
+.showAnswer {
+    display: flex;
+    text-align: center;
+    width: 40.52vmin;
+    height: 4.07vmin;
+    justify-content: center;
+    padding: 0.14vmin;
+    position: relative;
+    top: 11.10vmin;
+    left: 1.2vmin;
+    color: honeydew;
+    visibility: hidden;
+    border: 0.14vmin solid green;
+    border-radius: 1.36vmin;
+}
+
+/* Show answer button */
+#showAnswer {
+    color: blue;
+    width: 16.27vmin;
+    height: 4.07vmin;
+    border: 0.54vmin solid green;
+    border: 0.27vmin solid yellow;
+    border-radius: 3.25vmin;
+    font-family: cursive;
+    font-size: 2.06vmin;
+    font-weight: bold;
+    background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+    position: relative;
+    top: -17.36vmin;
+    left: -64vmin;
+    text-align: left;
+    padding-left: 0.81vmin;
+    bottom: 0.81vmin;
+}
+
+#showAnswer:hover {
+    background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+    color: white;
 }
 
 /* The box containing the question */
 div.div1 {
     color: rgb(0, 0, 0);
-    font-size: 56px;
+    font-size: 1.52vmin;
     position: relative;
-    height: 200px;
-    width: 1500px;
-    margin: 30px 30px;
-    padding: 20px;
-    text-align: center;
+    height: 5.42vmin;
+    width: 40.68vmin;
+    margin: 0.81vmin 30.81vmin;
+    padding: 0.54vmin 0.54vmin 0.54vmin 0.54vmin;
     display: flex;
     display: inline-flex;
     justify-content: center;
-    border: 2px solid;
+    border: 0.05vmin solid;
     background-color: rgb(89, 156, 138);
     text-align: center;
     border-bottom-color: red;
-    border-radius: 20px;
+    border-radius: 0.54vmin;
+    left: -29.7vmin;
 }
 
-/* The box containing difficulty buttons */
-.qDifficultyBox {
-    border: 5px solid green;
-    border-radius: 30px;
-    background-color: rgb(65, 56, 8);
-    width: 680px;
-    height: 220px;
-    position: relative;
-    left: 860px;
-    top: -385px;
-    padding: 0px 0 20px 20px;
+/*  Individual difficulty button */
+.difficulty {
+    background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
+    border: 0.27vmin solid rgb(21, 139, 35);
+    border-radius: 1.36vmin;
+    font-size: 0.92vmin;
     color: white;
+}
+
+.qCat {
+    font-size: 0.92vmin;
+    margin: 0.54vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.qDiff {
+    margin-top: -0.27vmin;
 }
 
 /*  Class containing all difficulty buttons */
@@ -86,56 +139,52 @@ div.div1 {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 170px 170px 170px;
-    gap: 50px;
-    height: 100px;
+    grid-template-rows: 2.71vmin 2.71vmin 2.71vmin;
+    grid-template-columns: 4.61vmin 4.61vmin 4.61vmin;
+    gap: 1.36vmin;
+    height: 2.71vmin;
     border-color: green;
 }
 
-/*  Individual difficulty button */
-.difficulty {
-    background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
-    border: 10px solid rgb(21, 139, 35);
-    border-radius: 50px;
-    font-size: 34px;
+/* The box containing difficulty buttons */
+.qDifficultyBox {
+    border: 0.14vmin solid green;
+    border-radius: 0.81vmin;
+    background-color: rgb(65, 56, 8);
+    width: 18.50vmin;
+    height: 5.85vmin;
+    position: relative;
+    left: 23.9vmin;
+    top: -8.3vmin;
+    padding: 0vmin 0vmin 0.54vmin 0vmin;
     color: white;
-}
-
-.qCat {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.qDiff {
-    margin-top: -10px;
 }
 
 /* image */
 img {
-    width: 96%;
-    height: 1000px;
+    width: 41vmin;
+    height: 27.12vmin;
     position: relative;
-    left: -1px;
-    top: 100px;
-    border: 5px solid green;
-    border-radius: 50px;
+    left: -0.03vmin;
+    top: 2.71vmin;
+    border: 0.14vmin solid green;
+    border-radius: 1.36vmin;
 }
 
 /* all response buttons */
 .response {
     display: grid;
-    grid-auto-rows: 50px;
-    width: 750px;
+    width: 20.34vmin;
     position: relative;
-    left: 100px;
+    left: 3vmin;
     border-color: green;
     justify-content: center;
     background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
     color: black;
-    font-size: 45px;
-    border-radius: 60px;
+    font-size: 1.5vmin;
+    border-radius: 1.63vmin;
+    height: 5vmin;
+    top: 0.8vmin;
 }
 
 /* All response buttons */
@@ -145,112 +194,95 @@ img {
 
 /* Response 1 button */
 #response1 {
-    margin-top: -70px;
-    padding-top: -10px;
-    padding: 15px 15px 15px 15px;
+    margin-top: -1.90vmin;
+    padding-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
-    padding-bottom: 140px;
+    padding-bottom: 3.80vmin;
 }
 
 /* Response 2 button */
 #response2 {
-    margin-top: -10px;
-    padding: 15px 15px 15px 15px;
-    padding-bottom: 140px;
+    margin-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
+    padding-bottom: 3.80vmin;
 }
 
 /* Response 3 button */
 #response3 {
-    margin-top: -10px;
-    padding: 15px 15px 15px 15px;
-    padding-bottom: 140px;
+    margin-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
+    padding-bottom: 3.80vmin;
 }
 
 /* Response 4 button */
 #response4 {
-    margin-top: -10px;
-    padding: 15px 15px 15px 15px;
-    padding-bottom: 140px;
+    margin-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
+    padding-bottom: 3.80vmin;
 }
 
 /* Class containing all answers buttons */
 .answersButtons {
     position: relative;
-    bottom: 790px;
-    left: 345px;
+    bottom: 21.42vmin;
+    left: 9.36vmin;
     display: grid;
-    gap: 25px;
+    gap: 1vmin;
 }
 
 /* The box displaying the number of questions */
 #labelQ {
     position: relative;
-    padding: 10px;
+    padding: 0.27vmin;
     position: relative;
-    left: -10px;
-    bottom: 50px;
+    left: -0.27vmin;
+    bottom: 1.36vmin;
 }
 
 /* The box displaying the number of correct answers */
 #labelC {
     position: relative;
-    padding: 10px;
+    padding: 0.27vmin;
     position: relative;
-    left: 2px;
-    bottom: 50px;
+    left: 0.05vmin;
+    bottom: 1.36vmin;
 }
 
 /* The box displaying the number of wrong answers */
 #labelW {
     position: relative;
-    padding: 10px;
+    padding: 0.27vmin;
     position: relative;
-    left: 10px;
-    bottom: 50px;
-}
-
-/* Elements under the box for question */
-.underQuestion {
-    position: relative;
-    top: 10px;
+    left: 0.27vmin;
+    bottom: 0.36vmin;
 }
 
 /*  Set h1 text to red */
 h1 {
     color: rgb(17, 13, 12);
-    text-shadow: 2px 2px red;
-}
-
-/* Label for category */
-.labelCategory {
-    font-size: 60px;
-    color: white;
-    position: relative;
-    top: -40px;
-    right: 370px;
-
+    text-shadow: 0.05vmin 0.05vmin red;
 }
 
 /* Reset button */
 .reset {
     color: blue;
-    width: 250px;
-    height: 250px;
-    border: 20px solid green;
-    border: 10px solid yellow;
-    border-radius: 120px;
+    width: 7vmin;
+    height: 7vmin;
+    border: 0.54vmin solid green;
+    border: 0.27vmin solid yellow;
+    border-radius: 10vmin;
     font-family: cursive;
-    font-size: 76px;
+    font-size: 2.07vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    top: -640px;
-    left: -985px;
+    left: -27vmin;
+    top: -17.5vmin;
     z-index: 1;
-    bottom: 20px;
 }
 
 /* Reset button */
@@ -262,21 +294,21 @@ h1 {
 /* Start game button */
 .startGame {
     color: blue;
-    width: 600px;
-    height: 150px;
-    border: 20px solid green;
-    border: 10px solid yellow;
-    border-radius: 120px;
+    width: 16.27vmin;
+    height: 4.07vmin;
+    border: 0.54vmin solid green;
+    border: 0.27vmin solid yellow;
+    border-radius: 40.7vmin;
     font-family: cursive;
-    font-size: 76px;
+    font-size: 2.07vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    top: -640px;
-    left: -1090px;
+    top: -17.36vmin;
+    left: -29.56vmin;
     text-align: right;
-    padding-right: 30px;
-    bottom: 20px;
+    padding-right: 0.81vmin;
+    bottom: 0.54vmin;
 }
 
 /* Start game button */
@@ -285,37 +317,18 @@ h1 {
     color: white;
 }
 
-/* Show answer button */
-#showAnswer {
-    color: blue;
-    width: 600px;
-    height: 150px;
-    border: 20px solid green;
-    border: 10px solid yellow;
-    border-radius: 120px;
-    font-family: cursive;
-    font-size: 76px;
-    font-weight: bold;
-    background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
-    position: relative;
-    top: -640px;
-    left: -2360px;
-    text-align: left;
-    padding-left: 30px;
-    bottom: 20px;
-}
-
 /* Class containing the image and responses buttons */
 .imgAndQuestions {
     position: relative;
-    top: -200px;
+    top: -5.42vmin;
 }
 
 /* Class containing the three buttons (show answer, reset and start the game) */
 .threeBottomButtons {
     position: relative;
-    top: -420px;
-    left: 1600px;
+    top: -11.39vmin;
+    left: 43.39vmin;
+    padding: auto;
 }
 
 /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
@@ -324,28 +337,34 @@ h1 {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 56px;
+    font-size: 1.7vmin;
     display: inline-block;
     position: relative;
-    top: -900px;
+    top: -24.6vmin;
 }
 
 /* The bottom boxes for total question number, correct answers and wrong answers */
 .bottombuttons {
-    height: 70px;
-    width: 190px;
-    font-size: 60px;
-    padding: 15px;
-    border: 10px solid green;
+    height: 1.90vmin;
+    width: 5.15vmin;
+    font-size: 1.8vmin;
+    padding: 0.4vmin;
+    border: 0.27vmin solid green;
     display: inline-block;
-    margin: 85px;
+    margin: 2.31vmin;
     position: relative;
     background-color: black;
     color: honeydew;
-    border-radius: 80px;
-    position: relative;
-    top: -1000px;
+    border-radius: 2vmin;
+    top: -27.12vmin;
 }
+
+.labelsAndButtons {
+    position: relative;
+    top: 2vmin;
+}
+
+
 
 /* Set the wrong anser to red */
 #wrong {
@@ -375,87 +394,71 @@ h1 {
 
 /* Win window */
 .win {
-    font-size: 200px;
-    border-radius: 100px;
-    border: 20px solid rgb(14, 1, 2);
+    font-size: 5.42vmin;
+    border-radius: 2.71vmin;
+    border: 0.54vmin solid rgb(14, 1, 2);
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 1610px;
-    height: 2950px;
+    width: 43.66vmin;
+    height: 80vmin;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -1650px;
+    left: -44.75vmin;
     z-index: -1;
 }
 
 /* Trophy in the win window */
 .winImage {
     position: relative;
-    top: 600px;
-    height: 1000px;
-    width: 1000px;
-    border-radius: 800px;
-    border: 30px double rgb(10, 238, 29);
+    top: 16.27vmin;
+    height: 27.12vmin;
+    width: 27.12vmin;
+    border-radius: 21.69vmin;
+    border: 0.81vmin double rgb(216, 15, 8);;
 }
 
 /* "Congratulations!" in the win window */
 #winPar1 {
     position: absolute;
-    right: 150px;
-    width: 2000px;
-    font-size: 200px;
+    right: 4.07vmin;
+    width: 54.24vmin;
+    font-size: 5.42vmin;
     position: relative;
-    top: -1100px;
+    top: -30vmin;
     color: rgb(6, 240, 18);
-    text-shadow: 0 0 10px rgb(249, 8, 8), 0 0 20px rgb(223, 9, 9), 0 0 42px rgb(233, 46, 13),
-        0 0 82px rgb(255, 30, 0), 0 0 92px rgb(255, 0, 0);
+    text-shadow: 0 0 0.27vmin rgb(249, 8, 8), 0 0 0.54vmin rgb(223, 9, 9), 0 0 1.14vmin rgb(233, 46, 13),
+        0 0 2.22vmin rgb(255, 30, 0), 0 0 2.49vmin rgb(255, 0, 0);
     position: relative;
-    left: -198px;
+    left: -5.37vmin;
 }
 
 /* The message below the trophy */
 #winPar2 {
     position: relative;
-    top: 100px;
+    top: 2.71vmin;
     color: rgb(6, 240, 6);
-    text-shadow: 0 0 10px rgb(249, 8, 8), 0 0 20px rgb(223, 9, 9), 0 0 42px rgb(233, 46, 13),
-        0 0 82px rgb(255, 30, 0), 0 0 92px rgb(255, 0, 0);
+    text-shadow: 0 0 0.27vmin rgb(249, 8, 8), 0 0 0.54vmin rgb(223, 9, 9), 0 0 1.14vmin rgb(233, 46, 13),
+        0 0 2.22vmin rgb(255, 30, 0), 0 0 2.49vmin rgb(255, 0, 0);
     position: relative;
-}
-
-/* The message in the lose window */
-#losePar {
-    font-size: 180px;
-    position: relative;
-    padding: 10px;
-    top: -1000px;
-    color: rgb(240, 33, 6);
-    text-shadow: 0 0 10px rgb(75, 245, 7), 0 0 20px rgb(16, 223, 9), 0 0 42px rgb(25, 191, 10),
-        0 0 82px rgb(4, 248, 32), 0 0 92px rgb(11, 240, 11);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 550px;
 }
 
 /* The reset button in the win window */
 .winReset {
     color: blue;
-    width: 250px;
-    height: 250px;
-    border: 20px solid green;
-    border: 10px solid yellow;
-    border-radius: 120px;
+    width: 8vmin;
+    height: 8vmin;
+    border: 0.27vmin solid yellow;
+    border-radius: 30vmin;
     font-family: cursive;
-    font-size: 76px;
+    font-size: 2.7vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: absolute;
-    top: 2550px;
-    left: 675px;
+    top: 68vmin;
+    left: 18.31vmin;
     z-index: 1;
 }
 
@@ -467,37 +470,53 @@ h1 {
 
 /* Lose window */
 .lose {
-    font-size: 200px;
-    border: 20px solid rgb(14, 1, 2);
-    border-radius: 100px;
+    font-size: 5.42vmin;
+    border: 0.54vmin solid rgb(14, 1, 2);
+    border-radius: 2.71vmin;
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 1610px;
-    height: 2950px;
+    width: 43.66vmin;
+    height: 80vmin;
+    display: flex;
+    align-items: center;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -3290px;
+    left: -89.5vmin;
     z-index: -1;
+}
+
+/* The message in the lose window */
+#losePar {
+    font-size: 4vmin;
+    position: relative;
+    top: -27.12vmin;
+    color: rgb(240, 33, 6);
+    text-shadow: 0 0 0.27vmin rgb(2, 27, 3), 0 0 0.54vmin rgb(31, 8, 2), 0 0 1.14vmin rgb(24, 5, 2),
+        0 0 2.22vmin rgb(0, 255, 21), 0 0 2.49vmin rgb(0, 255, 38);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10vmin;
+    padding: 0.27vmin 0.27vmin;
 }
 
 /* Reset button in lose window */
 .loseReset {
     color: blue;
-    width: 250px;
-    height: 250px;
-    border: 20px solid green;
-    border: 10px solid yellow;
-    border-radius: 120px;
+    width: 8vmin;
+    height: 8vmin;
+    border: 0.27vmin solid yellow;
+    border-radius: 30vmin;
     font-family: cursive;
-    font-size: 76px;
+    font-size: 2.7vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: absolute;
-    top: 2550px;
-    left: 675px;
+    top: 68vmin;
+    left: 18.31vmin;
     z-index: -1;
 }
 
@@ -507,17 +526,8 @@ h1 {
     color: white;
 }
 
-/* body */
-body {
-    display: flex;
-   justify-content: center;
-  
-    font-size: 36px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 250px 20px 20px 2000px;
-    display: absolute;
-    left: 7050px;
+/* Elements under the box for question */
+.underQuestion {
+    position: relative;
+    top: -4vmin;
 }
