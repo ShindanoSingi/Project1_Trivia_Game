@@ -2,22 +2,22 @@
 body {
     display: flex;
    justify-content: center;
-    font-size: 0.98vmin;
+    font-size: 0.98vmax;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    max-width: 27.12vmin;
-    padding: 6.78vmin 0.54vmin 0.54vmin 54.24vmin;
+    max-width: 27.12vmax;
+    padding: 6.78vmax 0.54vmax 0.54vmax 54.24vmax;
 }
 
 /* The window with all elements */
 .containerBox {
-    font-size: 1.52vmin;
-    border-radius: 2.71vmin;
-    border: 0.54vmin solid rgb(14, 1, 2);
+    font-size: 1.52vmax;
+    border-radius: 2.71vmax;
+    border: 0.54vmax solid rgb(14, 1, 2);
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 43.66vmin;
-    height: 80vmin;
+    width: 43.66vmax;
+    height: 80vmax;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
@@ -29,25 +29,25 @@ body {
 
 /* Label for category */
 .labelCategory {
-    font-size: 1.63vmin;
+    font-size: 1.63vmax;
     color: white;
     position: relative;
-    top: -3.08vmin;
-    right: 10.03vmin;
+    top: -3.08vmax;
+    right: 10.03vmax;
 }
 
 /* The catgory Box */
 .category {
-    font-size: 1.52vmin;
+    font-size: 1.52vmax;
     text-align: center;
-    height: 5.42vmin;
-    width: 21.15vmin;
+    height: 5.42vmax;
+    width: 21.15vmax;
     position: relative;
-    top: -4.3vmin;
-    left: 0.81vmin;
+    top: -4.3vmax;
+    left: 0.81vmax;
     background-color: rgb(205, 220, 209);
-    border-radius: 2.17vmin;
-    padding: 0.68vmin 0.41vmin 0.41vmin 0.41vmin;
+    border-radius: 2.17vmax;
+    padding: 0.68vmax 0.41vmax 0.41vmax 0.41vmax;
     font-weight: 800;
 }
 
@@ -56,37 +56,37 @@ body {
 .showAnswer {
     display: flex;
     text-align: center;
-    width: 40.52vmin;
-    height: 4.07vmin;
+    width: 40.52vmax;
+    height: 4.07vmax;
     justify-content: center;
-    padding: 0.14vmin;
+    padding: 0.14vmax;
     position: relative;
-    top: 11.10vmin;
-    left: 1.2vmin;
+    top: 11.10vmax;
+    left: 1.2vmax;
     color: honeydew;
     visibility: hidden;
-    border: 0.14vmin solid green;
-    border-radius: 1.36vmin;
+    border: 0.14vmax solid green;
+    border-radius: 1.36vmax;
 }
 
 /* Show answer button */
 #showAnswer {
     color: blue;
-    width: 16.27vmin;
-    height: 4.07vmin;
-    border: 0.54vmin solid green;
-    border: 0.27vmin solid yellow;
-    border-radius: 3.25vmin;
+    width: 16.27vmax;
+    height: 4.07vmax;
+    border: 0.54vmax solid green;
+    border: 0.27vmax solid yellow;
+    border-radius: 3.25vmax;
     font-family: cursive;
-    font-size: 2.06vmin;
+    font-size: 2.06vmax;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    top: -17.36vmin;
-    left: -64vmin;
+    top: -17.36vmax;
+    left: -64vmax;
     text-align: left;
-    padding-left: 0.81vmin;
-    bottom: 0.81vmin;
+    padding-left: 0.81vmax;
+    bottom: 0.81vmax;
 }
 
 #showAnswer:hover {
@@ -97,41 +97,41 @@ body {
 /* The box containing the question */
 div.div1 {
     color: rgb(0, 0, 0);
-    font-size: 1.52vmin;
+    font-size: 1.52vmax;
     position: relative;
-    height: 5.42vmin;
-    width: 40.68vmin;
-    margin: 0.81vmin 30.81vmin;
-    padding: 0.54vmin 0.54vmin 0.54vmin 0.54vmin;
+    height: 5.42vmax;
+    width: 40.68vmax;
+    margin: 0.81vmax 30.81vmax;
+    padding: 0.54vmax 0.54vmax 0.54vmax 0.54vmax;
     display: flex;
     display: inline-flex;
     justify-content: center;
-    border: 0.05vmin solid;
+    border: 0.05vmax solid;
     background-color: rgb(89, 156, 138);
     text-align: center;
     border-bottom-color: red;
-    border-radius: 0.54vmin;
-    left: -29.7vmin;
+    border-radius: 0.54vmax;
+    left: -29.7vmax;
 }
 
 /*  Individual difficulty button */
 .difficulty {
     background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
-    border: 0.27vmin solid rgb(21, 139, 35);
-    border-radius: 1.36vmin;
-    font-size: 0.92vmin;
+    border: 0.27vmax solid rgb(21, 139, 35);
+    border-radius: 1.36vmax;
+    font-size: 0.92vmax;
     color: white;
 }
 
 .qCat {
-    font-size: 0.92vmin;
-    margin: 0.54vmin;
+    font-size: 0.92vmax;
+    margin: 0.54vmax;
     display: flex;
     justify-content: center;
 }
 
 .qDiff {
-    margin-top: -0.27vmin;
+    margin-top: -0.27vmax;
 }
 
 /*  Class containing all difficulty buttons */
@@ -139,52 +139,52 @@ div.div1 {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-rows: 2.71vmin 2.71vmin 2.71vmin;
-    grid-template-columns: 4.61vmin 4.61vmin 4.61vmin;
-    gap: 1.36vmin;
-    height: 2.71vmin;
+    grid-template-rows: 2.71vmax 2.71vmax 2.71vmax;
+    grid-template-columns: 4.61vmax 4.61vmax 4.61vmax;
+    gap: 1.36vmax;
+    height: 2.71vmax;
     border-color: green;
 }
 
 /* The box containing difficulty buttons */
 .qDifficultyBox {
-    border: 0.14vmin solid green;
-    border-radius: 0.81vmin;
+    border: 0.14vmax solid green;
+    border-radius: 0.81vmax;
     background-color: rgb(65, 56, 8);
-    width: 18.50vmin;
-    height: 5.85vmin;
+    width: 18.50vmax;
+    height: 5.85vmax;
     position: relative;
-    left: 23.9vmin;
-    top: -8.3vmin;
-    padding: 0vmin 0vmin 0.54vmin 0vmin;
+    left: 23.9vmax;
+    top: -8.3vmax;
+    padding: 0vmax 0vmax 0.54vmax 0vmax;
     color: white;
 }
 
 /* image */
 img {
-    width: 41vmin;
-    height: 27.12vmin;
+    width: 41vmax;
+    height: 27.12vmax;
     position: relative;
-    left: -0.03vmin;
-    top: 2.71vmin;
-    border: 0.14vmin solid green;
-    border-radius: 1.36vmin;
+    left: -0.03vmax;
+    top: 2.71vmax;
+    border: 0.14vmax solid green;
+    border-radius: 1.36vmax;
 }
 
 /* all response buttons */
 .response {
     display: grid;
-    width: 20.34vmin;
+    width: 20.34vmax;
     position: relative;
-    left: 3vmin;
+    left: 3vmax;
     border-color: green;
     justify-content: center;
     background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
     color: black;
-    font-size: 1.5vmin;
-    border-radius: 1.63vmin;
-    height: 5vmin;
-    top: 0.8vmin;
+    font-size: 1.5vmax;
+    border-radius: 1.63vmax;
+    height: 5vmax;
+    top: 0.8vmax;
 }
 
 /* All response buttons */
@@ -194,94 +194,94 @@ img {
 
 /* Response 1 button */
 #response1 {
-    margin-top: -1.90vmin;
-    padding-top: -0.27vmin;
-    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
+    margin-top: -1.90vmax;
+    padding-top: -0.27vmax;
+    padding: 0.41vmax 0.41vmax 0.41vmax 0.41vmax;
     text-align: center;
-    padding-bottom: 3.80vmin;
+    padding-bottom: 3.80vmax;
 }
 
 /* Response 2 button */
 #response2 {
-    margin-top: -0.27vmin;
-    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
+    margin-top: -0.27vmax;
+    padding: 0.41vmax 0.41vmax 0.41vmax 0.41vmax;
     text-align: center;
-    padding-bottom: 3.80vmin;
+    padding-bottom: 3.80vmax;
 }
 
 /* Response 3 button */
 #response3 {
-    margin-top: -0.27vmin;
-    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
+    margin-top: -0.27vmax;
+    padding: 0.41vmax 0.41vmax 0.41vmax 0.41vmax;
     text-align: center;
-    padding-bottom: 3.80vmin;
+    padding-bottom: 3.80vmax;
 }
 
 /* Response 4 button */
 #response4 {
-    margin-top: -0.27vmin;
-    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
+    margin-top: -0.27vmax;
+    padding: 0.41vmax 0.41vmax 0.41vmax 0.41vmax;
     text-align: center;
-    padding-bottom: 3.80vmin;
+    padding-bottom: 3.80vmax;
 }
 
 /* Class containing all answers buttons */
 .answersButtons {
     position: relative;
-    bottom: 21.42vmin;
-    left: 9.36vmin;
+    bottom: 21.42vmax;
+    left: 9.36vmax;
     display: grid;
-    gap: 1vmin;
+    gap: 1vmax;
 }
 
 /* The box displaying the number of questions */
 #labelQ {
     position: relative;
-    padding: 0.27vmin;
+    padding: 0.27vmax;
     position: relative;
-    left: -0.27vmin;
-    bottom: 1.36vmin;
+    left: -0.27vmax;
+    bottom: 1.36vmax;
 }
 
 /* The box displaying the number of correct answers */
 #labelC {
     position: relative;
-    padding: 0.27vmin;
+    padding: 0.27vmax;
     position: relative;
-    left: 0.05vmin;
-    bottom: 1.36vmin;
+    left: 0.05vmax;
+    bottom: 1.36vmax;
 }
 
 /* The box displaying the number of wrong answers */
 #labelW {
     position: relative;
-    padding: 0.27vmin;
+    padding: 0.27vmax;
     position: relative;
-    left: 0.27vmin;
-    bottom: 0.36vmin;
+    left: 0.27vmax;
+    bottom: 0.36vmax;
 }
 
 /*  Set h1 text to red */
 h1 {
     color: rgb(17, 13, 12);
-    text-shadow: 0.05vmin 0.05vmin red;
+    text-shadow: 0.05vmax 0.05vmax red;
 }
 
 /* Reset button */
 .reset {
     color: blue;
-    width: 7vmin;
-    height: 7vmin;
-    border: 0.54vmin solid green;
-    border: 0.27vmin solid yellow;
-    border-radius: 10vmin;
+    width: 7vmax;
+    height: 7vmax;
+    border: 0.54vmax solid green;
+    border: 0.27vmax solid yellow;
+    border-radius: 10vmax;
     font-family: cursive;
-    font-size: 2.07vmin;
+    font-size: 2.07vmax;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    left: -27vmin;
-    top: -17.5vmin;
+    left: -27vmax;
+    top: -17.5vmax;
     z-index: 1;
 }
 
@@ -294,21 +294,21 @@ h1 {
 /* Start game button */
 .startGame {
     color: blue;
-    width: 16.27vmin;
-    height: 4.07vmin;
-    border: 0.54vmin solid green;
-    border: 0.27vmin solid yellow;
-    border-radius: 40.7vmin;
+    width: 16.27vmax;
+    height: 4.07vmax;
+    border: 0.54vmax solid green;
+    border: 0.27vmax solid yellow;
+    border-radius: 40.7vmax;
     font-family: cursive;
-    font-size: 2.07vmin;
+    font-size: 2.07vmax;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    top: -17.36vmin;
-    left: -29.56vmin;
+    top: -17.36vmax;
+    left: -29.56vmax;
     text-align: right;
-    padding-right: 0.81vmin;
-    bottom: 0.54vmin;
+    padding-right: 0.81vmax;
+    bottom: 0.54vmax;
 }
 
 /* Start game button */
@@ -320,14 +320,14 @@ h1 {
 /* Class containing the image and responses buttons */
 .imgAndQuestions {
     position: relative;
-    top: -5.42vmin;
+    top: -5.42vmax;
 }
 
 /* Class containing the three buttons (show answer, reset and start the game) */
 .threeBottomButtons {
     position: relative;
-    top: -11.39vmin;
-    left: 43.39vmin;
+    top: -11.39vmax;
+    left: 43.39vmax;
     padding: auto;
 }
 
@@ -337,31 +337,31 @@ h1 {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 1.7vmin;
+    font-size: 1.7vmax;
     display: inline-block;
     position: relative;
-    top: -24.6vmin;
+    top: -24.6vmax;
 }
 
 /* The bottom boxes for total question number, correct answers and wrong answers */
 .bottombuttons {
-    height: 1.90vmin;
-    width: 5.15vmin;
-    font-size: 1.8vmin;
-    padding: 0.4vmin;
-    border: 0.27vmin solid green;
+    height: 1.90vmax;
+    width: 5.15vmax;
+    font-size: 1.8vmax;
+    padding: 0.4vmax;
+    border: 0.27vmax solid green;
     display: inline-block;
-    margin: 2.31vmin;
+    margin: 2.31vmax;
     position: relative;
     background-color: black;
     color: honeydew;
-    border-radius: 2vmin;
-    top: -27.12vmin;
+    border-radius: 2vmax;
+    top: -27.12vmax;
 }
 /* The class containing the bottom labels and buttons */
 .labelsAndButtons {
     position: relative;
-    top: 2vmin;
+    top: 2vmax;
 }
 
 
@@ -393,71 +393,71 @@ h1 {
 
 /* Win window */
 .win {
-    font-size: 5.42vmin;
-    border-radius: 2.71vmin;
-    border: 0.54vmin solid rgb(14, 1, 2);
+    font-size: 5.42vmax;
+    border-radius: 2.71vmax;
+    border: 0.54vmax solid rgb(14, 1, 2);
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 43.66vmin;
-    height: 80vmin;
+    width: 43.66vmax;
+    height: 80vmax;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -44.75vmin;
+    left: -44.75vmax;
     z-index: -1;
 }
 
 /* Trophy in the win window */
 .winImage {
     position: relative;
-    top: 16.27vmin;
-    height: 27.12vmin;
-    width: 27.12vmin;
-    border-radius: 21.69vmin;
-    border: 0.81vmin double rgb(216, 15, 8);;
+    top: 16.27vmax;
+    height: 27.12vmax;
+    width: 27.12vmax;
+    border-radius: 21.69vmax;
+    border: 0.81vmax double rgb(216, 15, 8);;
 }
 
 /* "Congratulations!" in the win window */
 #winPar1 {
     position: absolute;
-    right: 4.07vmin;
-    width: 54.24vmin;
-    font-size: 5.42vmin;
+    right: 4.07vmax;
+    width: 54.24vmax;
+    font-size: 5.42vmax;
     position: relative;
-    top: -30vmin;
+    top: -30vmax;
     color: rgb(6, 240, 18);
-    text-shadow: 0 0 0.27vmin rgb(249, 8, 8), 0 0 0.54vmin rgb(223, 9, 9), 0 0 1.14vmin rgb(233, 46, 13),
-        0 0 2.22vmin rgb(255, 30, 0), 0 0 2.49vmin rgb(255, 0, 0);
+    text-shadow: 0 0 0.27vmax rgb(249, 8, 8), 0 0 0.54vmax rgb(223, 9, 9), 0 0 1.14vmax rgb(233, 46, 13),
+        0 0 2.22vmax rgb(255, 30, 0), 0 0 2.49vmax rgb(255, 0, 0);
     position: relative;
-    left: -5.37vmin;
+    left: -5.37vmax;
 }
 
 /* The message below the trophy */
 #winPar2 {
     position: relative;
-    top: 2.71vmin;
+    top: 2.71vmax;
     color: rgb(6, 240, 6);
-    text-shadow: 0 0 0.27vmin rgb(249, 8, 8), 0 0 0.54vmin rgb(223, 9, 9), 0 0 1.14vmin rgb(233, 46, 13),
-        0 0 2.22vmin rgb(255, 30, 0), 0 0 2.49vmin rgb(255, 0, 0);
+    text-shadow: 0 0 0.27vmax rgb(249, 8, 8), 0 0 0.54vmax rgb(223, 9, 9), 0 0 1.14vmax rgb(233, 46, 13),
+        0 0 2.22vmax rgb(255, 30, 0), 0 0 2.49vmax rgb(255, 0, 0);
     position: relative;
 }
 
 /* The reset button in the win window */
 .winReset {
     color: blue;
-    width: 8vmin;
-    height: 8vmin;
-    border: 0.27vmin solid yellow;
-    border-radius: 30vmin;
+    width: 8vmax;
+    height: 8vmax;
+    border: 0.27vmax solid yellow;
+    border-radius: 30vmax;
     font-family: cursive;
-    font-size: 2.7vmin;
+    font-size: 2.7vmax;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: absolute;
-    top: 68vmin;
-    left: 18.31vmin;
+    top: 68vmax;
+    left: 18.31vmax;
     z-index: 1;
 }
 
@@ -469,12 +469,12 @@ h1 {
 
 /* Lose window */
 .lose {
-    font-size: 5.42vmin;
-    border: 0.54vmin solid rgb(14, 1, 2);
-    border-radius: 2.71vmin;
+    font-size: 5.42vmax;
+    border: 0.54vmax solid rgb(14, 1, 2);
+    border-radius: 2.71vmax;
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 43.66vmin;
-    height: 80vmin;
+    width: 43.66vmax;
+    height: 80vmax;
     display: flex;
     align-items: center;
     display: inline-block;
@@ -483,39 +483,39 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -89.5vmin;
+    left: -89.5vmax;
     z-index: -1;
 }
 
 /* The message in the lose window */
 #losePar {
-    font-size: 4vmin;
+    font-size: 4vmax;
     position: relative;
-    top: -27.12vmin;
+    top: -27.12vmax;
     color: rgb(240, 33, 6);
-    text-shadow: 0 0 0.27vmin rgb(2, 27, 3), 0 0 0.54vmin rgb(31, 8, 2), 0 0 1.14vmin rgb(24, 5, 2),
-        0 0 2.22vmin rgb(0, 255, 21), 0 0 2.49vmin rgb(0, 255, 38);
+    text-shadow: 0 0 0.27vmax rgb(2, 27, 3), 0 0 0.54vmax rgb(31, 8, 2), 0 0 1.14vmax rgb(24, 5, 2),
+        0 0 2.22vmax rgb(0, 255, 21), 0 0 2.49vmax rgb(0, 255, 38);
     position: relative;
     display: flex;
     justify-content: center;
-    top: 10vmin;
-    padding: 0.27vmin 0.27vmin;
+    top: 10vmax;
+    padding: 0.27vmax 0.27vmax;
 }
 
 /* Reset button in lose window */
 .loseReset {
     color: blue;
-    width: 8vmin;
-    height: 8vmin;
-    border: 0.27vmin solid yellow;
-    border-radius: 30vmin;
+    width: 8vmax;
+    height: 8vmax;
+    border: 0.27vmax solid yellow;
+    border-radius: 30vmax;
     font-family: cursive;
-    font-size: 2.7vmin;
+    font-size: 2.7vmax;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: absolute;
-    top: 68vmin;
-    left: 18.31vmin;
+    top: 68vmax;
+    left: 18.31vmax;
     z-index: -1;
 }
 
@@ -528,5 +528,5 @@ h1 {
 /* Elements under the box for question */
 .underQuestion {
     position: relative;
-    top: -4vmin;
+    top: -4vmax;
 }
