@@ -358,12 +358,11 @@ h1 {
     border-radius: 2vmin;
     top: -27.12vmin;
 }
-
+/* The class containing the bottom labels and buttons */
 .labelsAndButtons {
     position: relative;
     top: 2vmin;
 }
-
 
 
 /* Set the wrong anser to red */
