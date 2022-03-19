@@ -2,22 +2,22 @@
 body {
     display: flex;
    justify-content: center;
-    font-size: 0.98vh;
+    font-size: 0.98vmin;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    max-width: 27.12vh;
-    padding: 6.78vh 0.54vh 0.54vh 54.24vh;
+    max-width: 27.12vmin;
+    padding: 6.78vmin 0.54vmin 0.54vmin 54.24vmin;
 }
 
 /* The window with all elements */
 .containerBox {
-    font-size: 1.52vh;
-    border-radius: 2.71vh;
-    border: 0.54vh solid rgb(14, 1, 2);
+    font-size: 1.52vmin;
+    border-radius: 2.71vmin;
+    border: 0.54vmin solid rgb(14, 1, 2);
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 43.66vh;
-    height: 80vh;
+    width: 43.66vmin;
+    height: 80vmin;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
@@ -29,25 +29,25 @@ body {
 
 /* Label for category */
 .labelCategory {
-    font-size: 1.63vh;
+    font-size: 1.63vmin;
     color: white;
     position: relative;
-    top: -4vh;
-    right: 10.03vh;
+    top: -4vmin;
+    right: 10.03vmin;
 }
 
 /* The catgory Box */
 .category {
-    font-size: 1.52vh;
+    font-size: 1.52vmin;
     text-align: center;
-    height: 5.42vh;
-    width: 21.15vh;
+    height: 5.42vmin;
+    width: 21.15vmin;
     position: relative;
-    top: -4.3vh;
-    left: 0.81vh;
+    top: -4.3vmin;
+    left: 0.81vmin;
     background-color: rgb(205, 220, 209);
-    border-radius: 2.17vh;
-    padding: 0.68vh 0.41vh 0.41vh 0.41vh;
+    border-radius: 2.17vmin;
+    padding: 0.68vmin 0.41vmin 0.41vmin 0.41vmin;
     font-weight: 800;
 }
 
@@ -56,37 +56,37 @@ body {
 .showAnswer {
     display: flex;
     text-align: center;
-    width: 40.52vh;
-    height: 4.07vh;
+    width: 40.52vmin;
+    height: 4.07vmin;
     justify-content: center;
-    padding: 0.14vh;
+    padding: 0.14vmin;
     position: relative;
-    top: 11.10vh;
-    left: 1.2vh;
+    top: 11.10vmin;
+    left: 1.2vmin;
     color: honeydew;
     visibility: hidden;
-    border: 0.14vh solid green;
-    border-radius: 1.36vh;
+    border: 0.14vmin solid green;
+    border-radius: 1.36vmin;
 }
 
 /* Show answer button */
 #showAnswer {
     color: blue;
-    width: 16.27vh;
-    height: 4.07vh;
-    border: 0.54vh solid green;
-    border: 0.27vh solid yellow;
-    border-radius: 3.25vh;
+    width: 16.27vmin;
+    height: 4.07vmin;
+    border: 0.54vmin solid green;
+    border: 0.27vmin solid yellow;
+    border-radius: 3.25vmin;
     font-family: cursive;
-    font-size: 2.06vh;
+    font-size: 2.06vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    top: -17.36vh;
-    left: -64vh;
+    top: -17.36vmin;
+    left: -64vmin;
     text-align: left;
-    padding-left: 0.81vh;
-    bottom: 0.81vh;
+    padding-left: 0.81vmin;
+    bottom: 0.81vmin;
 }
 
 #showAnswer:hover {
@@ -97,41 +97,41 @@ body {
 /* The box containing the question */
 div.div1 {
     color: rgb(0, 0, 0);
-    font-size: 1.52vh;
+    font-size: 1.52vmin;
     position: relative;
-    height: 5.42vh;
-    width: 40.68vh;
-    margin: 0.81vh 30.81vh;
-    padding: 0.54vh 0.54vh 0.54vh 0.54vh;
+    height: 5.42vmin;
+    width: 40.68vmin;
+    margin: 0.81vmin 30.81vmin;
+    padding: 0.54vmin 0.54vmin 0.54vmin 0.54vmin;
     display: flex;
     display: inline-flex;
     justify-content: center;
-    border: 0.05vh solid;
+    border: 0.05vmin solid;
     background-color: rgb(89, 156, 138);
     text-align: center;
     border-bottom-color: red;
-    border-radius: 0.54vh;
-    left: -29.7vh;
+    border-radius: 0.54vmin;
+    left: -29.7vmin;
 }
 
 /*  Individual difficulty button */
 .difficulty {
     background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
-    border: 0.27vh solid rgb(21, 139, 35);
-    border-radius: 1.36vh;
-    font-size: 0.92vh;
+    border: 0.27vmin solid rgb(21, 139, 35);
+    border-radius: 1.36vmin;
+    font-size: 0.92vmin;
     color: white;
 }
 
 .qCat {
-    font-size: 0.92vh;
-    margin: 0.54vh;
+    font-size: 0.92vmin;
+    margin: 0.54vmin;
     display: flex;
     justify-content: center;
 }
 
 .qDiff {
-    margin-top: -0.27vh;
+    margin-top: -0.27vmin;
 }
 
 /*  Class containing all difficulty buttons */
@@ -139,52 +139,52 @@ div.div1 {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-rows: 2.71vh 2.71vh 2.71vh;
-    grid-template-columns: 4.61vh 4.61vh 4.61vh;
-    gap: 1.36vh;
-    height: 2.71vh;
+    grid-template-rows: 2.71vmin 2.71vmin 2.71vmin;
+    grid-template-columns: 4.61vmin 4.61vmin 4.61vmin;
+    gap: 1.36vmin;
+    height: 2.71vmin;
     border-color: green;
 }
 
 /* The box containing difficulty buttons */
 .qDifficultyBox {
-    border: 0.14vh solid green;
-    border-radius: 0.81vh;
+    border: 0.14vmin solid green;
+    border-radius: 0.81vmin;
     background-color: rgb(65, 56, 8);
-    width: 18.50vh;
-    height: 5.85vh;
+    width: 18.50vmin;
+    height: 5.85vmin;
     position: relative;
-    left: 23.9vh;
-    top: -8.3vh;
-    padding: 0vh 0vh 0.54vh 0vh;
+    left: 23.9vmin;
+    top: -8.3vmin;
+    padding: 0vmin 0vmin 0.54vmin 0vmin;
     color: white;
 }
 
 /* image */
 img {
-    width: 41vh;
-    height: 27.12vh;
+    width: 41vmin;
+    height: 27.12vmin;
     position: relative;
-    left: -0.03vh;
-    top: 2.71vh;
-    border: 0.14vh solid green;
-    border-radius: 1.36vh;
+    left: -0.03vmin;
+    top: 2.71vmin;
+    border: 0.14vmin solid green;
+    border-radius: 1.36vmin;
 }
 
 /* all response buttons */
 .response {
     display: grid;
-    width: 20.34vh;
+    width: 20.34vmin;
     position: relative;
-    left: 3vh;
+    left: 3vmin;
     border-color: green;
     justify-content: center;
     background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
     color: black;
-    font-size: 1.5vh;
-    border-radius: 1.63vh;
-    height: 5vh;
-    top: 1.5vh;
+    font-size: 1.5vmin;
+    border-radius: 1.63vmin;
+    height: 5vmin;
+    top: 1.5vmin;
 }
 
 /* All response buttons */
@@ -194,94 +194,94 @@ img {
 
 /* Response 1 button */
 #response1 {
-    margin-top: -1.90vh;
-    padding-top: -0.27vh;
-    padding: 0.41vh 0.41vh 0.41vh 0.41vh;
+    margin-top: -1.90vmin;
+    padding-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
-    padding-bottom: 3.80vh;
+    padding-bottom: 3.80vmin;
 }
 
 /* Response 2 button */
 #response2 {
-    margin-top: -0.27vh;
-    padding: 0.41vh 0.41vh 0.41vh 0.41vh;
+    margin-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
-    padding-bottom: 3.80vh;
+    padding-bottom: 3.80vmin;
 }
 
 /* Response 3 button */
 #response3 {
-    margin-top: -0.27vh;
-    padding: 0.41vh 0.41vh 0.41vh 0.41vh;
+    margin-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
-    padding-bottom: 3.80vh;
+    padding-bottom: 3.80vmin;
 }
 
 /* Response 4 button */
 #response4 {
-    margin-top: -0.27vh;
-    padding: 0.41vh 0.41vh 0.41vh 0.41vh;
+    margin-top: -0.27vmin;
+    padding: 0.41vmin 0.41vmin 0.41vmin 0.41vmin;
     text-align: center;
-    padding-bottom: 3.80vh;
+    padding-bottom: 3.80vmin;
 }
 
 /* Class containing all answers buttons */
 .answersButtons {
     position: relative;
-    bottom: 21.42vh;
-    left: 9.36vh;
+    bottom: 21.42vmin;
+    left: 9.36vmin;
     display: grid;
-    gap: 0.68vh;
+    gap: 0.68vmin;
 }
 
 /* The box displaying the number of questions */
 #labelQ {
     position: relative;
-    padding: 0.27vh;
+    padding: 0.27vmin;
     position: relative;
-    left: -0.27vh;
-    bottom: 1.36vh;
+    left: -0.27vmin;
+    bottom: 1.36vmin;
 }
 
 /* The box displaying the number of correct answers */
 #labelC {
     position: relative;
-    padding: 0.27vh;
+    padding: 0.27vmin;
     position: relative;
-    left: 0.05vh;
-    bottom: 1.36vh;
+    left: 0.05vmin;
+    bottom: 1.36vmin;
 }
 
 /* The box displaying the number of wrong answers */
 #labelW {
     position: relative;
-    padding: 0.27vh;
+    padding: 0.27vmin;
     position: relative;
-    left: 0.27vh;
-    bottom: 0.36vh;
+    left: 0.27vmin;
+    bottom: 0.36vmin;
 }
 
 /*  Set h1 text to red */
 h1 {
     color: rgb(17, 13, 12);
-    text-shadow: 0.05vh 0.05vh red;
+    text-shadow: 0.05vmin 0.05vmin red;
 }
 
 /* Reset button */
 .reset {
     color: blue;
-    width: 7vh;
-    height: 7vh;
-    border: 0.54vh solid green;
-    border: 0.27vh solid yellow;
-    border-radius: 10vh;
+    width: 7vmin;
+    height: 7vmin;
+    border: 0.54vmin solid green;
+    border: 0.27vmin solid yellow;
+    border-radius: 10vmin;
     font-family: cursive;
-    font-size: 2.07vh;
+    font-size: 2.07vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    left: -27vh;
-    top: -17.5vh;
+    left: -27vmin;
+    top: -17.5vmin;
     z-index: 1;
 }
 
@@ -294,21 +294,21 @@ h1 {
 /* Start game button */
 .startGame {
     color: blue;
-    width: 16.27vh;
-    height: 4.07vh;
-    border: 0.54vh solid green;
-    border: 0.27vh solid yellow;
-    border-radius: 40.7vh;
+    width: 16.27vmin;
+    height: 4.07vmin;
+    border: 0.54vmin solid green;
+    border: 0.27vmin solid yellow;
+    border-radius: 40.7vmin;
     font-family: cursive;
-    font-size: 2.07vh;
+    font-size: 2.07vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: relative;
-    top: -17.36vh;
-    left: -29.56vh;
+    top: -17.36vmin;
+    left: -29.56vmin;
     text-align: right;
-    padding-right: 0.81vh;
-    bottom: 0.54vh;
+    padding-right: 0.81vmin;
+    bottom: 0.54vmin;
 }
 
 /* Start game button */
@@ -320,14 +320,14 @@ h1 {
 /* Class containing the image and responses buttons */
 .imgAndQuestions {
     position: relative;
-    top: -5.42vh;
+    top: -5.42vmin;
 }
 
 /* Class containing the three buttons (show answer, reset and start the game) */
 .threeBottomButtons {
     position: relative;
-    top: -11.39vh;
-    left: 43.39vh;
+    top: -11.39vmin;
+    left: 43.39vmin;
     padding: auto;
 }
 
@@ -337,31 +337,31 @@ h1 {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 1.7vh;
+    font-size: 1.7vmin;
     display: inline-block;
     position: relative;
-    top: -24.6vh;
+    top: -24.6vmin;
 }
 
 /* The bottom boxes for total question number, correct answers and wrong answers */
 .bottombuttons {
-    height: 1.90vh;
-    width: 5.15vh;
-    font-size: 1.8vh;
-    padding: 0.4vh;
-    border: 0.27vh solid green;
+    height: 1.90vmin;
+    width: 5.15vmin;
+    font-size: 1.8vmin;
+    padding: 0.4vmin;
+    border: 0.27vmin solid green;
     display: inline-block;
-    margin: 2.31vh;
+    margin: 2.31vmin;
     position: relative;
     background-color: black;
     color: honeydew;
-    border-radius: 2vh;
-    top: -27.12vh;
+    border-radius: 2vmin;
+    top: -27.12vmin;
 }
 
 .labelsAndButtons {
     position: relative;
-    top: 2vh;
+    top: 2vmin;
 }
 
 
@@ -394,71 +394,71 @@ h1 {
 
 /* Win window */
 .win {
-    font-size: 5.42vh;
-    border-radius: 2.71vh;
-    border: 0.54vh solid rgb(14, 1, 2);
+    font-size: 5.42vmin;
+    border-radius: 2.71vmin;
+    border: 0.54vmin solid rgb(14, 1, 2);
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 43.66vh;
-    height: 80vh;
+    width: 43.66vmin;
+    height: 80vmin;
     display: inline-block;
     justify-content: center;
     background-image: url("trivia_image.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -44.75vh;
+    left: -44.75vmin;
     z-index: -1;
 }
 
 /* Trophy in the win window */
 .winImage {
     position: relative;
-    top: 16.27vh;
-    height: 27.12vh;
-    width: 27.12vh;
-    border-radius: 21.69vh;
-    border: 0.81vh double rgb(10, 238, 29);
+    top: 16.27vmin;
+    height: 27.12vmin;
+    width: 27.12vmin;
+    border-radius: 21.69vmin;
+    border: 0.81vmin double rgb(10, 238, 29);
 }
 
 /* "Congratulations!" in the win window */
 #winPar1 {
     position: absolute;
-    right: 4.07vh;
-    width: 54.24vh;
-    font-size: 5.42vh;
+    right: 4.07vmin;
+    width: 54.24vmin;
+    font-size: 5.42vmin;
     position: relative;
-    top: -54.24vh;
+    top: -54.24vmin;
     color: rgb(6, 240, 18);
-    text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13),
-        0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
+    text-shadow: 0 0 0.27vmin rgb(249, 8, 8), 0 0 0.54vmin rgb(223, 9, 9), 0 0 1.14vmin rgb(233, 46, 13),
+        0 0 2.22vmin rgb(255, 30, 0), 0 0 2.49vmin rgb(255, 0, 0);
     position: relative;
-    left: -5.37vh;
+    left: -5.37vmin;
 }
 
 /* The message below the trophy */
 #winPar2 {
     position: relative;
-    top: 2.71vh;
+    top: 2.71vmin;
     color: rgb(6, 240, 6);
-    text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13),
-        0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
+    text-shadow: 0 0 0.27vmin rgb(249, 8, 8), 0 0 0.54vmin rgb(223, 9, 9), 0 0 1.14vmin rgb(233, 46, 13),
+        0 0 2.22vmin rgb(255, 30, 0), 0 0 2.49vmin rgb(255, 0, 0);
     position: relative;
 }
 
 /* The reset button in the win window */
 .winReset {
     color: blue;
-    width: 8vh;
-    height: 8vh;
-    border: 0.27vh solid yellow;
-    border-radius: 30vh;
+    width: 8vmin;
+    height: 8vmin;
+    border: 0.27vmin solid yellow;
+    border-radius: 30vmin;
     font-family: cursive;
-    font-size: 2.06vh;
+    font-size: 2.06vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: absolute;
-    top: 68vh;
-    left: 18.31vh;
+    top: 68vmin;
+    left: 18.31vmin;
     z-index: 1;
 }
 
@@ -470,12 +470,12 @@ h1 {
 
 /* Lose window */
 .lose {
-    font-size: 5.42vh;
-    border: 0.54vh solid rgb(14, 1, 2);
-    border-radius: 2.71vh;
+    font-size: 5.42vmin;
+    border: 0.54vmin solid rgb(14, 1, 2);
+    border-radius: 2.71vmin;
     background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-    width: 43.66vh;
-    height: 80vh;
+    width: 43.66vmin;
+    height: 80vmin;
     display: flex;
     align-items: center;
     display: inline-block;
@@ -484,39 +484,39 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -89.5vh;
+    left: -89.5vmin;
     z-index: -1;
 }
 
 /* The message in the lose window */
 #losePar {
-    font-size: 4vh;
+    font-size: 4vmin;
     position: relative;
-    top: -27.12vh;
+    top: -27.12vmin;
     color: rgb(240, 33, 6);
-    text-shadow: 0 0 0.27vh rgb(2, 27, 3), 0 0 0.54vh rgb(31, 8, 2), 0 0 1.14vh rgb(24, 5, 2),
-        0 0 2.22vh rgb(0, 255, 21), 0 0 2.49vh rgb(0, 255, 38);
+    text-shadow: 0 0 0.27vmin rgb(2, 27, 3), 0 0 0.54vmin rgb(31, 8, 2), 0 0 1.14vmin rgb(24, 5, 2),
+        0 0 2.22vmin rgb(0, 255, 21), 0 0 2.49vmin rgb(0, 255, 38);
     position: relative;
     display: flex;
     justify-content: center;
-    top: 10vh;
-    padding: 0.27vh 0.27vh;
+    top: 10vmin;
+    padding: 0.27vmin 0.27vmin;
 }
 
 /* Reset button in lose window */
 .loseReset {
     color: blue;
-    width: 8vh;
-    height: 8vh;
-    border: 0.27vh solid yellow;
-    border-radius: 30vh;
+    width: 8vmin;
+    height: 8vmin;
+    border: 0.27vmin solid yellow;
+    border-radius: 30vmin;
     font-family: cursive;
-    font-size: 2.06vh;
+    font-size: 2.06vmin;
     font-weight: bold;
     background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
     position: absolute;
-    top: 68vh;
-    left: 18.31vh;
+    top: 68vmin;
+    left: 18.31vmin;
     z-index: -1;
 }
 
@@ -529,5 +529,5 @@ h1 {
 /* Elements under the box for question */
 .underQuestion {
     position: relative;
-    top: -4vh;
+    top: -4vmin;
 }
