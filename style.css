@@ -325,6 +325,7 @@ h1 {
 
 /* Class containing the three buttons (show answer, reset and start the game) */
 .threeBottomButtons {
+    font-size: 1.5vh;
     position: relative;
     top: -11.39vh;
     left: 43.39vh;
